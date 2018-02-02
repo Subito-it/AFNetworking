@@ -112,7 +112,10 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return nil as this method is unavailable
  */
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wnullability"
 - (nullable instancetype)init NS_UNAVAILABLE;
+#pragma clang diagnostic pop
 
 ///--------------------------------------------------
 /// @name Starting & Stopping Reachability Monitoring
