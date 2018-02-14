@@ -8,6 +8,8 @@ Pod::Spec.new do |s|
   s.authors  = { 'Mattt Thompson' => 'm@mattt.me' }
   s.source   = { :git => 'https://github.com/AFNetworking/AFNetworking.git', :tag => s.version, :submodules => true }
   s.requires_arc = true
+
+  s.static_framework = true
   
   s.public_header_files = 'AFNetworking/AFNetworking.h'
   s.source_files = 'AFNetworking/AFNetworking.h'
